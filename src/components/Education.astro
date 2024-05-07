@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "oct. 2020 - jun. 2023",
+    title: "Ciclo Superior Desarrollo de Aplicaciones Web",
+    company: "IES Hermanos Machado",
+    description: "Puedo desarrollar aplicaciones web con acceso a bases de datos utilizando lenguajes, objetos de acceso y herramientas de mapeo adecuados a las especificaciones. También integrar contenidos en la lógica de una aplicación web, desarrollando componentes de acceso a datos adecuados a las especificaciones.",
+    
+  },
+  {
+    date: "oct. 2018 - jun. 2020",
+    title: "Técnico en sistemas microinformáticos y redes",
+    company: "IES Hermanos Machado",
+    description:
+      "Puedo instalar-reparar equipos informáticos o como técnico de soporte informático. También instalar y configurar software básico y de aplicación, redes locales cableadas, inalámbricas o mixtas y conectadas a redes públicas y di algo de de programación como los leguajes son c++ y javascript.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

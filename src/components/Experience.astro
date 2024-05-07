@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "nov. 2023 - abr. 2024",
+    title: "Becario",
+    company: "Soltel Group",
+    description: "Curso dado por la empresa Soltel, financiado por FUNDAE, tiene una duración de 6 meses. Durante el curso se han echo proyectos en la empresa Soltel, en la que se ha trabajado en un proyecto inspirado en las necesidades de la empresa.",
+    link: "https://shre.ink/8b0q",
+  },
+  {
+    date: "mar. 2023 - jun. 2023",
+    title: "Estudiante en prácticas",
+    company: "Ayesa",
+    description:
+      "Forme parte del equipo de desarrollo en un proyecto que estaba en desarrollo en el cual participe con tareas que me iban mandando mi supervisor en la que se necesitaba modificar código o crear nuevas funciones, el proyecto trataba de replicar la página de la Junta de Andalucía pero en este caso para La Rioja.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
