@@ -10,6 +10,7 @@ import MySQL from "./icons/Mysql.astro"
 import JavaScript from "./icons/javaScript.astro"
 import HTML from "./icons/Html.astro"
 import CSS from "./icons/Css.astro"
+import Bootstrap from "./icons/Bootstrap.astro"
 
 const TAGS = {
   ANGULAR: {
@@ -54,6 +55,11 @@ const TAGS = {
     class: "bg-[#1572B6] text-white flex items-center",
     icon: CSS,
   },
+  BOOSTRAP : {
+    name: "Bootstrap",
+    class: "bg-[#7952B3] text-white flex items-center",
+    icon: Bootstrap,
+  },
 
   
 }
@@ -70,9 +76,9 @@ const PROJECTS = [
     title: "Gestor de cafetería - Gestión de comandas",
     description:
       "Aplicacion desarrollada para la gestion de una cafetería. Para digitalizar la gestión de las consumiciones de las mesas que tiene el local.",
-    link: "https://github.com/manue02/Gestor-Cafeteria.git",
+    link: "https://gestor-cafeteria.vercel.app/index.html",
     image: "/projects/2.jpeg",
-    tags: [TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS],
+    tags: [TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS, TAGS.BOOSTRAP],
   },
 ]
 ---
